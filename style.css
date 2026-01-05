@@ -1,0 +1,351 @@
+/* ========== VARIABLES ========== */
+:root {
+    --brown: #8b4513;
+    --dark-brown: #6b3e26;
+    --yellow: #d9a066;
+    --orange: #ff9800;
+    --light-bg: #f0f0d8;
+    --gray: #444;
+    --light-gray: #ddd;
+    --medium-gray: #bbb;
+}
+
+/* ========== GLOBAL STYLES ========== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--light-bg);
+}
+
+section {
+    background-color: #fff;
+    margin: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+section h2 {
+    background-color: var(--yellow);
+    padding: 10px;
+    margin: 0;
+    font-size: 1.3rem;
+    color: #2c1b10;
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: var(--dark-brown);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h3 {
+    margin: 5px 0 0;
+    font-weight: normal;
+}
+
+/* ========== EXPERIENCE TIMELINE ========== */
+.experience {
+    margin-top: 20px;
+}
+
+.sub-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.6fr 1.2fr 2fr 1fr;
+    border-left: 2px solid var(--brown);
+    border-right: 2px solid var(--brown);
+}
+
+.experience-grid>div {
+    padding: 15px;
+    border-bottom: 2px solid var(--brown);
+    border-right: 2px solid var(--brown);
+}
+
+.experience-grid>div:last-child {
+    border-right: none;
+}
+
+.experience-grid.header {
+    font-weight: bold;
+    background: var(--brown);
+    color: #fff;
+    border-top: 2px solid var(--brown);
+    border-bottom: 2px solid var(--brown);
+}
+
+.experience-grid.header>div {
+    border-right: 1px solid #fff;
+}
+
+.experience-grid.header>div:last-child {
+    border-right: none;
+}
+
+.experience-grid ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.icon {
+    font-size: 2rem;
+    color: var(--dark-brown);
+}
+
+.experience-total {
+    text-align: left;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 0;
+    background: var(--brown);
+    color: #fff;
+    border: 2px solid var(--brown);
+}
+
+/* ========== ABOUT SECTION ========== */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 25px 40px;
+    margin-top: 20px;
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 3px solid var(--brown);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.social-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: var(--dark-brown);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: var(--yellow);
+    transform: scale(1.2);
+}
+
+.about-right {
+    flex: 2;
+}
+
+.about-right p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.about-right h3 {
+    color: var(--brown);
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.skills {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.skills li {
+    margin-bottom: 6px;
+    color: var(--gray);
+}
+
+/* ========== CONTACT FORM ========== */
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: var(--gray);
+    font-style: italic;
+}
+
+/* Fieldsets */
+fieldset {
+    margin-bottom: 20px;
+    background-color: #fff3e0;
+}
+.fieldset-primary {
+    border: 2px solid var(--orange);
+    background-color: #fff3e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.fieldset-default {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+form legend {
+    font-weight: bold;
+    color: var(--brown);
+    padding: 0 10px;
+}
+
+/* Grids */
+.form-grid,
+.split-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-row,
+.radio-group,
+.checkbox-group,
+.full-row,
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-row label,
+.full-row label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid var(--medium-gray);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: var(--brown);
+    outline: none;
+    box-shadow: 0 0 4px rgba(139, 69, 19, 0.3);
+}
+
+select.form-control {
+    background: #fff;
+    cursor: pointer;
+}
+
+/* Actions */
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 6px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--brown);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--dark-brown);
+}
+
+.btn-secondary {
+    background: var(--light-gray);
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background: var(--medium-gray);
+}
+
+/* Output */
+.form-output {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px dashed var(--brown);
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fdfdfd;
+    white-space: pre-wrap;
+}
+
+/* Inline */
+.form-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.form-inline label {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.form-inline input,
+.form-inline textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-inline textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#project-type , #project-description {
+    height: 35px;
+    width: 70%;
+}
+

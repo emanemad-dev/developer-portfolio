@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- ===== HEADER START ===== -->
+    <header>
+        <h1>John Doe Portfolio</h1>
+        <h3>Professional Web Developer</h3>
+    </header>
+    <!-- ===== HEADER END ===== -->
+
+    <!-- ===== ABOUT ME START ===== -->
+    <section class="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <!-- Left -->
+            <div class="about-left">
+                <img src="images/profile.jpg" alt="John Doe profile picture" class="profile-img" />
+
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="about-right">
+                <p>
+                    Hello! I'm John Doe, a passionate web developer with over 5 years of
+                    experience in creating innovative digital solutions. I specialize in
+                    full-stack development and have a keen interest in modern web
+                    technologies.
+                </p>
+                <p>
+                    My journey in web development started during my college years, and
+                    since then I've been continuously learning and adapting to new
+                    technologies. I believe in writing clean, efficient code and
+                    creating user-friendly interfaces.
+                </p>
+
+                <h3>Skills</h3>
+                <ul class="skills">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- ===== ABOUT ME END ===== -->
+
+    <!-- ===== EXPERIENCE TIMELINE START ===== -->
+    <section class="experience">
+        <h2>Experience Timeline</h2>
+        <h3 class="sub-heading">Professional Experience Overview</h3>
+
+        <!-- Header -->
+        <div class="experience-grid header">
+            <div>Company</div>
+            <div>Logo</div>
+            <div>Role</div>
+            <div>Key Achievements</div>
+            <div>Dates</div>
+        </div>
+
+        <!-- Grouped rows for TechCorp -->
+        <div class="experience-grid company-group">
+            <div class="company" style="grid-row: span 2;">TechCorp Solutions</div>
+            <div class="logo" style="grid-row: span 2;"><i class="fas fa-building icon"></i></div>
+            <div class="role">Senior Full Stack Developer</div>
+            <div class="achievements">
+                <ul>
+                    <li>Lead development of web applications</li>
+                    <li>Mentor junior developers</li>
+                    <li>Architect scalable solutions</li>
+                </ul>
+            </div>
+            <div class="dates">Jan 2023 - Present</div>
+
+            <div class="role">Full Stack Developer</div>
+            <div class="achievements">
+                <ul>
+                    <li>Developed responsive web applications</li>
+                    <li>Collaborated with design teams</li>
+                    <li>Optimized application performance</li>
+                </ul>
+            </div>
+            <div class="dates">2021 - 2023</div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="experience-grid">
+            <div>Digital Agency Pro</div>
+            <div><i class="fas fa-laptop-code icon"></i></div>
+            <div>Frontend Developer</div>
+            <div>
+                <ul>
+                    <li>Built user interfaces from mockups</li>
+                    <li>Implemented responsive designs</li>
+                    <li>Conducted code reviews</li>
+                </ul>
+            </div>
+            <div>2019 - 2020</div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="experience-grid">
+            <div>Web Design Studio</div>
+            <div><i class="fas fa-paint-brush icon"></i></div>
+            <div>Junior Web Developer</div>
+            <div>
+                <ul>
+                    <li>Maintained existing websites</li>
+                    <li>Fixed bugs and implemented features</li>
+                    <li>Learned best practices</li>
+                </ul>
+            </div>
+            <div>2019 - 2020</div>
+        </div>
+
+        <!-- Footer -->
+        <div class="experience-total">
+            Total Experience: 5+ years in web development
+        </div>
+    </section>
+    <!-- ===== EXPERIENCE TIMELINE END ===== -->
+
+    <!-- ===== CONTACT ME START ===== -->
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <p class="contact-intro">Feel free to reach out for collaborations, projects, or just a friendly chat!</p>
+
+        <form id="contactForm">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-grid">
+                    <div class="form-row">
+                        <label for="firstName">First Name: <span aria-hidden="true">*</span></label>
+                        <input class="form-control" type="text" id="firstName" name="firstName" required />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="lastName">Last Name: <span aria-hidden="true">*</span></label>
+                        <input class="form-control" type="text" id="lastName" name="lastName" required />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email Address: <span aria-hidden="true">*</span></label>
+                        <input class="form-control" type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phone">Phone Number:</label>
+                        <input class="form-control" type="tel" id="phone" name="phone" pattern="[0-9+\-\s()]{7,}"
+                            title="Enter a valid phone number" />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="meetingDate">Preferred Meeting Date:</label>
+                        <input class="form-control" type="date" id="meetingDate" name="meetingDate" />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contactTime">Best Time to Contact:</label>
+                        <input class="form-control" type="time" id="contactTime" name="contactTime" />
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Project Details -->
+            <fieldset>
+                <legend>Project Details</legend>
+
+                <!-- Project Info (two columns) -->
+                <div class="split-two">
+                    <!-- Project Type -->
+                    <div class="form-inline">
+                        <label for="project-type">Project Type:</label>
+                        <input type="text" id="project-type" name="project_type" class="form-control"
+                            placeholder="e.g. Website, Mobile App, Dashboard" />
+                    </div>
+                    <!-- Project Description -->
+                    <div class="form-inline">
+                        <label for="project-description">Project Description:</label>
+                        <textarea id="project-description" name="project_description" class="form-control" rows="4"
+                            placeholder="Write a short description of your project..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Budget + Services -->
+                <div class="split-two">
+                    <!-- Budget -->
+                    <div class="block">
+                        <p class="block-title">Budget Range:</p>
+                        <div class="radio-group">
+                            <label><input type="radio" name="budget" value="under5000" /> Under $5,000</label>
+                            <label><input type="radio" name="budget" value="5000-10000" /> $5,000 - $10,000</label>
+                            <label><input type="radio" name="budget" value="10000-25000" /> $10,000 - $25,000</label>
+                            <label><input type="radio" name="budget" value="over25000" /> Over $25,000</label>
+                        </div>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="block">
+                        <p class="block-title">Services Required (check all that apply):</p>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="services[]" value="uiux" /> UI/UX Design</label>
+                            <label><input type="checkbox" name="services[]" value="frontend" /> Frontend
+                                Development</label>
+                            <label><input type="checkbox" name="services[]" value="backend" /> Backend
+                                Development</label>
+                            <label><input type="checkbox" name="services[]" value="hosting" /> Hosting &amp;
+                                Deployment</label>
+                            <label><input type="checkbox" name="services[]" value="maintenance" /> Maintenance &amp;
+                                Support</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Referral -->
+                <div class="full-row">
+                    <label for="referral">How did you hear about me?</label>
+                    <select id="referral" name="referral" class="form-control">
+                        <option value="">-- select source --</option>
+                        <option value="friend">Friend</option>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="google">Google Search</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+
+
+            <!-- Actions -->
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <button type="reset" class="btn-secondary">
+                    <i class="fas fa-eraser"></i> Clear Form
+                </button>
+            </div>
+
+            <!-- Output -->
+            <pre id="formOutput" class="form-output" aria-live="polite" hidden></pre>
+        </form>
+    </section>
+    <!-- ===== CONTACT ME END ===== -->
+
+</body>
+
+</html>
